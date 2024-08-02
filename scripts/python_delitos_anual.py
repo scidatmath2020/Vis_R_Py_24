@@ -49,6 +49,7 @@ ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
 #### Gráfico de línea y pasos con colores
 (
 ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
+  geom_point(color="red") +
   geom_line(color="red") +
   geom_step(color="pink")
 )
@@ -59,11 +60,34 @@ ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
   geom_area()
 )
 
+#### Gráfico de área
+(
+ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
+  geom_area(fill="blue",
+            color="blue",
+            size = 2,
+            alpha=0.5)
+)
+
+
 #### Gráfico de línea con grosor, transparencia, tipo y color
 (
 ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
   geom_line(size=1.5,
             alpha=0.5,
+            linetype="dashed",
+            color="midnightblue")
+)
+
+#### Gráfico de línea y paso donde cada geometría tiene sus
+#### propios efectos visuales
+(
+ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
+  geom_point(size=1.8,
+              color="midnightblue") +
+  geom_line(size=1,
+            color="midnightblue") +
+  geom_step(alpha=0.5,
             linetype="dashed",
             color="midnightblue")
 )
@@ -77,6 +101,14 @@ ggplot(data=robo_calle,mapping=aes(x="Periodos",y="total")) +
 ggplot(data=delitos,mapping=aes(x="Periodos",y="total")) +
   geom_line() 
 )
+
+#### Gráfico de línea con puntos
+(
+ggplot(data=delitos,mapping=aes(x="Periodos",y="total")) +
+  geom_line() +
+  geom_point()
+)
+
 
 #### Gráfico de líneas múltiples agrupando
 (
@@ -152,7 +184,11 @@ ggplot(data=delitos_esp,mapping=aes(x="Periodos",
   geom_line(size=2,alpha=0.5) +
   geom_line(size=0.5) +
   geom_point(size=2) +
+  geom_step(alpha=0.5,
+            linetype="dashed") +
   scale_x_continuous(breaks = range(2010,2023)) +
   theme(legend_position = "top",
+        panel_background = element_rect("black"),
+        panel_grid = element_line(color="darkgrey",size=0.3),
         axis_text_x = element_text(angle = 45, hjust = 1))
 )
