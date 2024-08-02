@@ -5,6 +5,8 @@ setwd("C:/Users/Usuario/Documents/scidata/24_vis_r_py/trabajos")
 delitos = read.csv("incidencia_delictiva.csv",
                    fileEncoding = 'latin1')
 
+delitos_esp = read.csv("delitos_esp.csv")
+
 names(delitos)
 
 robo_calle = delitos[delitos$delito == "robo.o.asalto.en.la.calle.o.transporte.público",]
@@ -112,9 +114,9 @@ ggplot(data=delitos,mapping=aes(x=Periodos,
                                 group=delito,
                                 color=tipo)) +
   geom_line() +
-  scale_x_continuous(breaks = 2010:2022) +
-  theme(legend.position = "top",
-    axis.text.x = element_text(angle = 45, hjust = 1))
+  scale_x_continuous(breaks = 2010:2022) + #controla las etiquetas del eje horizontal
+  theme(legend.position = "top", #controla la posición de la leyenda 
+        axis.text.x = element_text(angle = 45, hjust = 1)) # controla el ángulo de las etiquetas horizontales
 
 #### Añadir efecto de brillo  
 ggplot(data=delitos,mapping=aes(x=Periodos,
@@ -128,8 +130,6 @@ ggplot(data=delitos,mapping=aes(x=Periodos,
         axis.text.x = element_text(angle = 45, hjust = 1))
   
 #### Delitos_especiales
-delitos_esp = read.csv("delitos_esp.csv")
-
 ggplot(data=delitos_esp,mapping=aes(x=Periodos,
                                 y=total,
                                 group=delito,
