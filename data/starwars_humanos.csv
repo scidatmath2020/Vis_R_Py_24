@@ -1,0 +1,23 @@
+name,height,mass,hair_color,skin_color,eye_color,birth_year,sex,gender,homeworld,imc,categoria_imc
+Luke Skywalker,172,77,blond,fair,blue,19,male,masculine,Tatooine,26.02758248,alto
+Darth Vader,202,136,none,white,yellow,41.9,male,masculine,Tatooine,33.33006568,obeso
+Leia Organa,150,49,brown,light,brown,19,female,feminine,Alderaan,21.77777778,normal
+Owen Lars,178,120,"brown, grey",light,blue,52,male,masculine,Tatooine,37.87400581,obesidad extrema
+Beru Whitesun lars,165,75,brown,light,blue,47,female,feminine,Tatooine,27.54820937,alto
+Biggs Darklighter,183,84,black,light,brown,24,male,masculine,Tatooine,25.08286303,alto
+Obi-Wan Kenobi,182,77,"auburn, white",fair,blue-gray,57,male,masculine,Stewjon,23.24598478,normal
+Anakin Skywalker,188,84,blond,fair,blue,41.9,male,masculine,Tatooine,23.76641014,normal
+Han Solo,180,80,brown,fair,brown,29,male,masculine,Corellia,24.69135802,normal
+Wedge Antilles,170,77,brown,fair,hazel,21,male,masculine,Corellia,26.64359862,alto
+Jek Tono Porkins,180,110,brown,fair,blue,NA,male,masculine,Bestine IV,33.95061728,obeso
+Palpatine,170,75,grey,pale,yellow,82,male,masculine,Naboo,25.95155709,alto
+Boba Fett,183,78.2,black,fair,brown,31.5,male,masculine,Kamino,23.35095106,normal
+Lando Calrissian,177,79,black,dark,brown,31,male,masculine,Socorro,25.21625331,alto
+Lobot,175,79,none,light,blue,37,male,masculine,Bespin,25.79591837,alto
+Qui-Gon Jinn,193,89,brown,fair,blue,92,male,masculine,NA,23.89325888,normal
+Mace Windu,188,84,none,dark,brown,72,male,masculine,Haruun Kal,23.76641014,normal
+Gregar Typho,185,85,black,dark,brown,NA,male,masculine,Naboo,24.83564646,normal
+Dooku,193,80,white,fair,brown,102,male,masculine,Serenno,21.47708663,normal
+Jango Fett,183,79,black,tan,brown,66,male,masculine,Concord Dawn,23.58983547,normal
+Raymus Antilles,188,79,brown,light,brown,NA,male,masculine,Alderaan,22.35174287,normal
+Padmé Amidala,165,45,brown,light,brown,46,female,feminine,Naboo,16.52892562,bajo
